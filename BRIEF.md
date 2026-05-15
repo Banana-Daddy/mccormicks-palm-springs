@@ -66,7 +66,81 @@ The current public site (classic-carauction.com) is functional and information-d
 
 ## Image Generation Prompts
 
-None generated. Auction inventory is the business's product, so per the accuracy rules the build does not generate synthetic vehicle images. All visuals are real McCormick's photography. If Daddy ever wants to add atmospheric filler (e.g., a Palm Springs desert landscape shot or an abstract brass-on-ink hero texture), I'd write Grok prompts at that time.
+**Editorial direction**: none generated. Auction inventory is the business's product, so per the accuracy rules the build does not generate synthetic vehicle images. All visuals are real McCormick's photography.
+
+**Atomic direction**: 6 illustrations generated (full prompts + per-image scoring in `IMAGE_LOG.md`). These are explicitly **atmospheric / decorative** Shag-style illustrations of *generic 1960s cars in Palm Springs settings*, not depictions of any specific lot at McCormick's. Total Atomic image cost: **$0.591**.
+
+---
+
+## Direction: Atomic Floor (Shag-style mid-century illustration)
+
+A second pass on the same brand, leaning into Daddy's `LasPalmasVintage-ATOMIC` design language. Where the editorial direction is restrained and photographic, this one is pure 1962 Palm Springs cocktail-party maximalism with the cars as the centerpiece.
+
+- **Concept**: McCormick's as a 1962 Palm Springs cocktail party where the cars happen to be on the block. Rendered entirely in flat-vector Shag-style illustration. No photography.
+- **Mood**: Sip slow. Stay late. Confident, chic, tongue-in-cheek leisure-class glamour with a hood scoop.
+- **Style**: Shag (Josh Agle) flat vector aesthetic — geometric figures, hard flat color blocks, atomic starburst ornaments, kidney pools, butterfly rooflines, 1960s cars as the heroes.
+- **Fonts**:
+  - Display: **[Anton](https://fonts.google.com/specimen/Anton)** — extra-condensed gothic
+  - Body: **[Cabin](https://fonts.google.com/specimen/Cabin)** — mid-century geometric sans
+  - Stamp accent: **[Bowlby One SC](https://fonts.google.com/specimen/Bowlby+One+SC)** — heavy display caps for the M crest and decade tags
+- **Colors** (strict 6-color atomic palette, identical to LasPalmasVintage-ATOMIC):
+  - `--orange: #D2552A` (burnt orange)
+  - `--avocado: #688E26` (avocado green)
+  - `--mustard: #E8B946` (warm mustard ochre)
+  - `--teal: #1F4E5F` (deep teal)
+  - `--ivory: #F4E8D0` (warm ivory paper)
+  - `--ink: #0F1419` (deep charcoal)
+- **Layout**: Geometric panels stacked vertically. Hard 3px ink borders + 4–8px ink/orange/mustard/avocado/teal box-shadow stacks on every interactive element. Color-blocked day cards (mustard / orange / avocado). Atomic-pattern wallpaper as section background. Big Anton typography with text-shadow drop-shadow stacks (ivory + ink + accent).
+- **Signature element**: **Six Shag-style illustrations** anchoring the build — a hero scene (burnt-orange convertible at MCM house at twilight), an architectural banner (5 cars lined up under a butterfly-roof), three era vignettes (50s/60s/70s), and a tiled atomic pattern. Plus the classic atomic title-shadow stack on every section headline.
+- **Anti-patterns avoided**: No photography in this direction. No purple gradients. No glassmorphism. No script fonts. No gradients of any kind — strict flat color blocks.
+
+### Atomic — 21st.dev Component Provenance
+
+This direction was generated entirely from original design judgment + the LasPalmasVintage-ATOMIC system as reference. No 21st.dev components were directly translated. The atomic-age aesthetic is custom-built (geometric panels, layered drop shadows, atomic SVG starbursts, color-blocked era cards, halftone bands). The cached `21st-sources/` from the Editorial direction (floating-header, elite-plan-card, marquee-stroke, split-testimonial) are not used here — they belong to the Editorial direction only.
+
+### Atomic — Content Inventory
+
+- **Real content preserved verbatim** (same as Editorial): address, phone, email, founder/year, auction cadence, Auction 80 results, partner sponsors
+- **New copy I wrote for Atomic** (flagged in ACCURACY.md):
+  - Hero subtitle: "A 1962 Palm Springs Cocktail Party. The Cars Are On The Block."
+  - Era taglines: "The Chrome Era" (50s) / "The Cool Era" (60s) / "The Muscle Era" (70s)
+  - Banner overlay: "Five Decades · One Driveway"
+  - After-Party CTA: "Cocktail hour never ended. Come on in."
+  - Footer line: "The desert's loudest quietest big sale."
+
+### Atomic — Share Preview
+
+- **OG image source**: `images/atomic/og-atomic.jpg` — sips-cropped from the generated Shag hero illustration (1200×630, ~224 KB).
+- **OG title**: `McCormick's Palm Springs — The Atomic Floor`
+- **OG description**: `A 1962 Palm Springs cocktail party with the cars on the block. Family-owned classic car auctions since 1985. Auction 81 — November 20–22, 2026.`
+- **Theme color**: `#F4E8D0` (warm ivory paper).
+
+### Atomic — Image Generation Prompts
+
+Full per-image prompts, scoring, costs, and timing live in `IMAGE_LOG.md`. Summary:
+
+| # | Slot | Aspect | Tier | Cost | Status |
+|---|---|---|---|---|---|
+| 1 | Hero (MCM house + convertible at twilight) | 16:9 | NB Pro | $0.134 | ✓ 1/2 |
+| 2 | Architecture banner (5 cars lined up) | 21:9 | NB Pro | $0.134 | ✓ 1/2 |
+| 3 | Vignette '50s (cream Ford convertible at motel) | 4:5 | NB2 | $0.101 | ✓ 1/2 |
+| 4 | Vignette '60s (teal Porsche at MCM driveway) | 4:5 | NB2 | $0.101 | ✓ 1/2 |
+| 5 | Vignette '70s (orange Cuda at gas station) | 4:5 | NB2 | $0.101 | ✓ 1/2 |
+| 6 | Atomic auto pattern (tiled bg) | 1:1 | Grok Std | $0.020 | ✓ 1/2 |
+| | **Total** | | | **$0.591** | |
+
+All passed first attempt. Per-build cap: $0.75. Headroom: $0.159 unused.
+
+---
+
+## Selector index
+
+The repo's `index.html` is now a selector landing page, not a full mockup. It links into both `direction-editorial.html` and `direction-atomic.html` with a side-by-side card layout. Has its own composite OG (`images/og-selector.jpg`) showing both directions split in half.
+
+URLs:
+- `https://banana-daddy.github.io/mccormicks-palm-springs/` → selector
+- `https://banana-daddy.github.io/mccormicks-palm-springs/direction-editorial.html` → Editorial Floor
+- `https://banana-daddy.github.io/mccormicks-palm-springs/direction-atomic.html` → Atomic Floor
 
 ## Suggested Next Mockups
 

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McCormick's Palm Springs — Family-owned classic car auctions since 1985</title>
+<meta name="description" content="Two auctions a year, 500+ vehicles each, in Palm Springs since 1985. Auction 81 — November 20–22, 2026. Year-round showroom at 244 N. Indian Canyon Dr.">
+
+<!-- Open Graph / iMessage / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="McCormick's Palm Springs">
+<meta property="og:title" content="McCormick's Palm Springs — The Editorial Floor">
+<meta property="og:description" content="Quiet, considered, family-owned. Two auctions a year, 500+ vehicles each, in Palm Springs since 1985. Auction 81 — November 20–22, 2026.">
+<meta property="og:url" content="https://banana-daddy.github.io/mccormicks-palm-springs/direction-editorial.html">
+<meta property="og:image" content="https://banana-daddy.github.io/mccormicks-palm-springs/images/og.jpg">
+<meta property="og:image:secure_url" content="https://banana-daddy.github.io/mccormicks-palm-springs/images/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A row of classic and exotic cars at McCormick's Palm Springs auction">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="McCormick's Palm Springs — The Editorial Floor">
+<meta name="twitter:description" content="Quiet, considered, family-owned. Two auctions a year, 500+ vehicles each, in Palm Springs since 1985.">
+<meta name="twitter:image" content="https://banana-daddy.github.io/mccormicks-palm-springs/images/og.jpg">
+<meta name="twitter:image:alt" content="A row of classic and exotic cars at McCormick's Palm Springs auction">
+
+<!-- Theme + favicon + canonical -->
+<meta name="theme-color" content="#0A0908">
+<link rel="icon" type="image/x-icon" href="images/source-icon.ico">
+<link rel="canonical" href="https://banana-daddy.github.io/mccormicks-palm-springs/direction-editorial.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0A0908',
+          'ink-2': '#15110E',
+          champagne: '#E8DCC4',
+          'champagne-2': '#C9BFA6',
+          brass: '#C9A961',
+          'brass-2': '#8E7642',
+          auction: '#7A2E2E',
+          dust: '#7A726A'
+        },
+        fontFamily: {
+          display: ['"Bodoni Moda"', 'serif'],
+          body: ['Manrope', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0A0908;
+    color: #E8DCC4;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .font-display { font-family: 'Bodoni Moda', serif; font-optical-sizing: auto; }
+  .ital { font-style: italic; }
+
+  /* Stroke-outlined marquee text */
+  .stroke-text {
+    color: transparent;
+    -webkit-text-stroke: 1px #C9A961;
+    text-stroke: 1px #C9A961;
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 38s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* Subtle film grain on hero */
+  .grain::after {
+    content: '';
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.92 0 0 0 0 0.86 0 0 0 0 0.77 0 0 0 0.45 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: .12;
+    mix-blend-mode: overlay;
+  }
+
+  /* Subtle hover lift on cards — keep animations to interactions, not visibility */
+  .lift { transition: transform .5s ease, border-color .35s ease; }
+  .lift:hover { transform: translateY(-3px); }
+
+  /* Hairline rule */
+  .hairline { background: linear-gradient(90deg, transparent, #C9A961 40%, #C9A961 60%, transparent); height: 1px; }
+
+  /* Lot card image-to-panel gradient */
+  .lot-fade {
+    background: linear-gradient(180deg, transparent 50%, rgba(10,9,8,0.85) 80%, #0A0908 100%);
+  }
+
+  /* Pill nav backdrop */
+  .pill-nav {
+    background: rgba(10, 9, 8, 0.72);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(201, 169, 97, 0.22);
+  }
+
+  /* Brass divider dot */
+  .dot { width: 4px; height: 4px; border-radius: 999px; background: #C9A961; display:inline-block; vertical-align: middle; }
+</style>
+</head>
+<body class="font-body antialiased">
+
+<!-- ============== FLOATING PILL HEADER ============== -->
+<header class="fixed top-3 md:top-5 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.5rem)] max-w-3xl pill-nav rounded-full px-4 md:px-6 py-2.5 md:py-3 flex items-center justify-between">
+  <a href="#top" class="flex items-center gap-2.5 group">
+    <span class="font-display text-2xl md:text-[26px] leading-none text-brass tracking-tight">M</span>
+    <span class="font-display tracking-[0.18em] text-[10px] md:text-[11px] uppercase text-champagne/85 group-hover:text-champagne transition">McCormick's</span>
+  </a>
+  <nav class="hidden md:flex items-center gap-7 text-[11px] uppercase tracking-[0.18em] text-champagne/70">
+    <a href="#auction" class="hover:text-brass transition">Auction 81</a>
+    <a href="#archive" class="hover:text-brass transition">From the Block</a>
+    <a href="#story" class="hover:text-brass transition">Our Story</a>
+    <a href="#visit" class="hover:text-brass transition">Visit</a>
+  </nav>
+  <a href="#consign" class="hidden md:inline-block text-[10px] uppercase tracking-[0.18em] text-ink bg-brass hover:bg-champagne px-3.5 py-1.5 rounded-full transition">Consign</a>
+  <a href="tel:7603203290" class="md:hidden text-[10px] uppercase tracking-[0.18em] text-brass">Call</a>
+</header>
+
+<!-- ============== HERO ============== -->
+<section id="top" class="relative min-h-[100svh] flex flex-col justify-end overflow-hidden grain">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img src="images/hp_slide01.jpg" alt="Classic cars on the auction floor" loading="eager"
+         class="w-full h-full object-cover opacity-50"
+         onerror="this.style.background='linear-gradient(135deg,#15110E,#0A0908)';this.style.opacity=1;">
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(10,9,8,0.55) 0%, rgba(10,9,8,0.35) 40%, rgba(10,9,8,0.95) 92%, #0A0908 100%);"></div>
+  </div>
+
+  <!-- Top metadata bar -->
+  <div class="relative z-10 px-5 md:px-12 pt-28 md:pt-32 flex items-center justify-between text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-champagne/65">
+    <span>Est. 1985 <span class="dot mx-2"></span> Palm Springs</span>
+    <span class="hidden sm:inline">Family Owned & Operated</span>
+  </div>
+
+  <!-- Hero content -->
+  <div class="relative z-10 px-5 md:px-12 pb-16 md:pb-24 mt-auto">
+    <p class="font-body text-[11px] md:text-[12px] uppercase tracking-[0.32em] text-brass mb-5 md:mb-8">Auction 81 <span class="dot mx-3"></span> November 20–22, 2026</p>
+    <h1 class="font-display text-[15vw] md:text-[10.5vw] lg:text-[8.5vw] leading-[0.92] tracking-[-0.02em] text-champagne font-medium">
+      Five hundred<br>
+      <span class="ital text-champagne/95">stories</span> at the<br>
+      desert's edge.
+    </h1>
+    <div class="mt-8 md:mt-12 max-w-xl">
+      <p class="text-champagne/75 text-[15px] md:text-[17px] leading-relaxed">
+        Two weekends a year, the country's most documented classics cross the block in Palm Springs. Forty-one years on, still family run. Still cars first.
+      </p>
+    </div>
+    <div class="mt-8 md:mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] uppercase tracking-[0.22em]">
+      <a href="#auction" class="inline-flex items-center gap-2 text-ink bg-champagne hover:bg-brass transition px-5 py-3 rounded-full">
+        See the Calendar <span aria-hidden>↓</span>
+      </a>
+      <a href="#consign" class="inline-flex items-center gap-2 text-champagne/85 hover:text-brass transition px-1 py-3">
+        Consign your car <span aria-hidden>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STROKE-OUTLINED MARQUEE TICKER ============== -->
+<section aria-label="Auction stats" class="relative border-y border-brass/20 bg-ink-2 py-7 md:py-10 overflow-hidden">
+  <div class="marquee-track font-display italic font-medium text-[12vw] md:text-[7vw] leading-none whitespace-nowrap">
+    <!-- Track A -->
+    <div class="flex items-center shrink-0">
+      <span class="stroke-text px-8">Auction 81</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Nov 20–22, 2026</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">500+ Lots</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Family Owned</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Est. 1985</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Palm Springs</span><span class="text-brass px-2">●</span>
+    </div>
+    <!-- Track B (duplicate for seamless loop) -->
+    <div class="flex items-center shrink-0" aria-hidden="true">
+      <span class="stroke-text px-8">Auction 81</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Nov 20–22, 2026</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">500+ Lots</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Family Owned</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Est. 1985</span><span class="text-brass px-2">●</span>
+      <span class="stroke-text px-8">Palm Springs</span><span class="text-brass px-2">●</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== AUCTION 81 — CALENDAR ============== -->
+<section id="auction" class="relative px-5 md:px-12 py-20 md:py-28">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-6 md:mb-8">
+      <span class="w-8 h-px bg-brass/60"></span>
+      <span class="text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-brass">The Next Sale</span>
+    </div>
+    <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-end">
+      <div class="md:col-span-7">
+        <h2 class="font-display text-[12vw] md:text-[5.5vw] lg:text-[4.5vw] leading-[0.95] tracking-[-0.015em] text-champagne font-medium">
+          Auction 81 <span class="ital text-brass">opens</span> with the desert sun behind it.
+        </h2>
+      </div>
+      <div class="md:col-span-5 md:pl-6 border-l border-brass/15 md:py-2">
+        <p class="text-champagne/75 leading-relaxed text-[15px] md:text-[16px]">
+          Three days. More than five hundred vehicles. Doors open Friday morning at the showroom on Indian Canyon. Featured cars list publishes closer to the date — preview by appointment any time.
+        </p>
+      </div>
+    </div>
+
+    <!-- Calendar block -->
+    <div class="mt-12 md:mt-16 grid grid-cols-3 border-t border-b border-brass/20 divide-x divide-brass/15">
+      <div class="px-3 md:px-8 py-7 md:py-10">
+        <p class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-champagne/55 mb-3">Friday</p>
+        <p class="font-display text-3xl md:text-6xl text-champagne leading-none">20</p>
+        <p class="text-champagne/65 text-[13px] mt-3 leading-snug">Doors open<br>Preview opens</p>
+      </div>
+      <div class="px-3 md:px-8 py-7 md:py-10 bg-ink-2">
+        <p class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-brass mb-3">Saturday</p>
+        <p class="font-display text-3xl md:text-6xl text-brass leading-none">21</p>
+        <p class="text-champagne/85 text-[13px] mt-3 leading-snug">Day 1 across<br>the block</p>
+      </div>
+      <div class="px-3 md:px-8 py-7 md:py-10">
+        <p class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-champagne/55 mb-3">Sunday</p>
+        <p class="font-display text-3xl md:text-6xl text-champagne leading-none">22</p>
+        <p class="text-champagne/65 text-[13px] mt-3 leading-snug">Day 2 + closing<br>lots</p>
+      </div>
+    </div>
+
+    <p class="mt-6 text-[11px] uppercase tracking-[0.22em] text-champagne/50">November 2026 <span class="dot mx-2"></span> Palm Springs, California</p>
+  </div>
+</section>
+
+<!-- ============== FROM THE BLOCK — ARCHIVE GALLERY ============== -->
+<section id="archive" class="relative px-5 md:px-12 py-20 md:py-28 bg-ink-2">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-10 md:mb-14 flex-wrap gap-4">
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <span class="w-8 h-px bg-brass/60"></span>
+          <span class="text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-brass">From the Archive</span>
+        </div>
+        <h2 class="font-display text-[10vw] md:text-[4.5vw] leading-[0.95] tracking-[-0.015em] text-champagne font-medium max-w-2xl">
+          Six lots that <span class="ital">crossed the block</span>.
+        </h2>
+      </div>
+      <p class="text-champagne/55 text-[13px] max-w-xs">
+        A handful from past auctions. Auction 80 alone moved 297 vehicles, with a 1960 Porsche Super 90 Convertible topping the room at $181,000.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <!-- Card 1 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide01.jpg" loading="lazy" alt="Classic car on McCormick's auction floor"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">From the Floor</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Auction 80 <span class="dot mx-1.5"></span> February 2026</p>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide02.jpg" loading="lazy" alt="Classic car at McCormick's"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">Across the Block</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Auction 80 <span class="dot mx-1.5"></span> February 2026</p>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide03.jpg" loading="lazy" alt="Classic car at McCormick's"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">Past Marquee</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Auction 79 <span class="dot mx-1.5"></span> November 2025</p>
+        </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide04.jpg" loading="lazy" alt="Classic car at McCormick's"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">Showroom Pick</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Year-round inventory</p>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide05.jpg" loading="lazy" alt="Classic car at McCormick's"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">Top of the Day</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Auction 79 <span class="dot mx-1.5"></span> November 2025</p>
+        </div>
+      </article>
+      <!-- Card 6 -->
+      <article class="group relative bg-ink overflow-hidden border border-brass/10 hover:border-brass/30 transition">
+        <div class="relative aspect-[5/4] overflow-hidden">
+          <img src="images/hp_slide06.jpg" loading="lazy" alt="Classic car at McCormick's"
+               class="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 lot-fade"></div>
+        </div>
+        <div class="px-5 md:px-6 pt-2 pb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-brass">Lot Highlight</p>
+          <p class="font-display text-2xl md:text-[28px] text-champagne leading-tight mt-1">From the Showroom</p>
+          <p class="text-champagne/55 text-[13px] mt-3">Year-round inventory</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="mt-10 text-[12px] text-champagne/45 italic max-w-2xl">
+      Auction 81 catalog publishes closer to the date. Visit the showroom in the meantime — fresh consignments roll in weekly.
+    </p>
+  </div>
+</section>
+
+<!-- ============== OUR STORY — KEITH MCCORMICK ============== -->
+<section id="story" class="relative px-5 md:px-12 py-20 md:py-32">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+    <div class="md:col-span-5 order-2 md:order-1">
+      <div class="relative aspect-[4/5] md:aspect-[4/5] overflow-hidden border border-brass/15">
+        <img src="images/aboutmccormicks.jpg" loading="lazy" alt="McCormick's Palm Springs auction floor"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0" style="background:linear-gradient(180deg, transparent 60%, rgba(10,9,8,0.55) 100%);"></div>
+      </div>
+      <p class="text-[10px] uppercase tracking-[0.22em] text-champagne/45 mt-3">Showroom <span class="dot mx-1.5"></span> Indian Canyon Drive</p>
+    </div>
+
+    <div class="md:col-span-7 order-1 md:order-2">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="w-8 h-px bg-brass/60"></span>
+        <span class="text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-brass">Our Story</span>
+      </div>
+      <h2 class="font-display text-[10vw] md:text-[4.5vw] leading-[0.95] tracking-[-0.015em] text-champagne font-medium">
+        Keith McCormick crossed an ocean and never <span class="ital">stopped collecting</span>.
+      </h2>
+      <div class="mt-7 space-y-5 text-champagne/75 leading-relaxed text-[15px] md:text-[16px] max-w-xl">
+        <p>
+          Back in 1981, Keith McCormick was a successful entrepreneur in the United Kingdom. By 1985, he had relocated to the California desert and hosted his first exotic car auction in Palm Springs.
+        </p>
+        <p>
+          Forty-one years later, the family still runs the floor. Two auctions a year. A year-round showroom. The same well-documented cars that built the reputation.
+        </p>
+      </div>
+      <div class="mt-9 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.22em] text-champagne/65">
+        <span><span class="text-brass">41</span> &nbsp;Years in Palm Springs</span>
+        <span><span class="text-brass">80+</span> &nbsp;Auctions Hosted</span>
+        <span><span class="text-brass">500+</span> &nbsp;Lots per Sale</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EDITORIAL TESTIMONIAL ============== -->
+<section class="relative px-5 md:px-12 py-20 md:py-32 bg-ink-2 border-y border-brass/15">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="flex items-center justify-center gap-3 mb-9">
+      <span class="w-8 h-px bg-brass/60"></span>
+      <span class="text-[10px] uppercase tracking-[0.28em] text-brass">House Position</span>
+      <span class="w-8 h-px bg-brass/60"></span>
+    </div>
+    <blockquote class="font-display font-light text-[7vw] md:text-[3.4vw] lg:text-[2.9vw] leading-[1.15] tracking-[-0.01em] text-champagne">
+      "Choosing an auction company should come down to <span class="ital text-brass">integrity, stability, and expert-level knowledge</span> — and not much else."
+    </blockquote>
+    <div class="mt-10 inline-flex items-center gap-4">
+      <span class="w-8 h-px bg-champagne/40"></span>
+      <p class="text-[11px] uppercase tracking-[0.22em] text-champagne/65">McCormick's <span class="dot mx-1.5"></span> House Code</p>
+      <span class="w-8 h-px bg-champagne/40"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONSIGN CTA + VISIT ============== -->
+<section id="consign" class="relative px-5 md:px-12 py-20 md:py-28">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16">
+    <!-- Consign -->
+    <div class="md:pr-8 md:border-r md:border-brass/15">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="w-8 h-px bg-brass/60"></span>
+        <span class="text-[10px] uppercase tracking-[0.28em] text-brass">Consign</span>
+      </div>
+      <h3 class="font-display text-[8vw] md:text-[3.4vw] leading-[1] tracking-[-0.015em] text-champagne font-medium">
+        Put your car <span class="ital">across the block</span>.
+      </h3>
+      <p class="text-champagne/70 mt-5 leading-relaxed max-w-md text-[15px]">
+        500+ vehicles per sale. Documented buyers. Family-run since 1985. We'll talk you through reserve, presentation, and the catalog.
+      </p>
+      <div class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] uppercase tracking-[0.22em]">
+        <a href="tel:7603203290" class="inline-flex items-center gap-2 text-ink bg-brass hover:bg-champagne transition px-5 py-3 rounded-full">
+          760.320.3290 <span aria-hidden>↗</span>
+        </a>
+        <a href="mailto:joe@classic-carauction.com" class="text-champagne/85 hover:text-brass transition">
+          joe@classic-carauction.com
+        </a>
+      </div>
+    </div>
+
+    <!-- Visit -->
+    <div id="visit" class="md:pl-2">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="w-8 h-px bg-brass/60"></span>
+        <span class="text-[10px] uppercase tracking-[0.28em] text-brass">Visit the Showroom</span>
+      </div>
+      <h3 class="font-display text-[8vw] md:text-[3.4vw] leading-[1] tracking-[-0.015em] text-champagne font-medium">
+        244 N. Indian <span class="ital">Canyon</span>.
+      </h3>
+      <address class="not-italic text-champagne/70 mt-5 leading-relaxed text-[15px]">
+        Palm Springs, California 92262<br>
+        <span class="text-champagne/55">Open year-round by appointment and during auction weekends.</span>
+      </address>
+      <div class="mt-7 flex items-center gap-4">
+        <a href="https://maps.google.com/?q=244+N+Indian+Canyon+Dr+Palm+Springs+CA+92262" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-champagne/85 hover:text-brass transition">
+          Get directions <span aria-hidden>↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sponsors row -->
+  <div class="max-w-6xl mx-auto mt-20 md:mt-28">
+    <div class="hairline mb-7"></div>
+    <p class="text-[10px] uppercase tracking-[0.28em] text-champagne/45 mb-5">Trusted Partners</p>
+    <div class="flex flex-wrap items-center gap-x-10 gap-y-4 text-[11px] md:text-[12px] uppercase tracking-[0.22em] text-champagne/55">
+      <span>J.J. Best Banc &nbsp;<span class="text-champagne/30">— Financing</span></span>
+      <span>Hagerty &nbsp;<span class="text-champagne/30">— Insurance</span></span>
+      <span>Plycar &nbsp;<span class="text-champagne/30">— Transport</span></span>
+      <span>Swisstrax &nbsp;<span class="text-champagne/30">— Showroom</span></span>
+      <span>NADA &nbsp;<span class="text-champagne/30">— Valuation</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="relative px-5 md:px-12 pt-16 md:pt-24 pb-8 bg-ink border-t border-brass/15">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 md:gap-12">
+      <div class="md:col-span-5">
+        <a href="#top" class="inline-flex items-end gap-3">
+          <span class="font-display text-5xl md:text-6xl text-brass leading-none">M</span>
+          <span class="font-display tracking-[0.18em] text-[12px] uppercase text-champagne/85 pb-1">McCormick's</span>
+        </a>
+        <p class="text-champagne/55 mt-5 max-w-sm leading-relaxed text-[14px]">
+          Family-owned classic car auctions in Palm Springs since 1985. Two auctions a year. A year-round showroom. The desert's quietest big sale.
+        </p>
+      </div>
+      <div class="md:col-span-3">
+        <p class="text-[10px] uppercase tracking-[0.28em] text-brass mb-4">The House</p>
+        <ul class="space-y-2.5 text-champagne/70 text-[14px]">
+          <li><a href="#auction" class="hover:text-brass transition">Auction 81</a></li>
+          <li><a href="#archive" class="hover:text-brass transition">From the Block</a></li>
+          <li><a href="#story" class="hover:text-brass transition">Our Story</a></li>
+          <li><a href="#consign" class="hover:text-brass transition">Consign a Car</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <p class="text-[10px] uppercase tracking-[0.28em] text-brass mb-4">Visit / Call</p>
+        <address class="not-italic text-champagne/70 text-[14px] leading-relaxed">
+          244 N. Indian Canyon Dr.<br>
+          Palm Springs, CA 92262<br>
+          <a href="tel:7603203290" class="text-champagne hover:text-brass transition">760.320.3290</a><br>
+          <a href="mailto:joe@classic-carauction.com" class="text-champagne hover:text-brass transition">joe@classic-carauction.com</a>
+        </address>
+        <div class="mt-5 flex items-center gap-4 text-[11px] uppercase tracking-[0.22em] text-champagne/65">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="hover:text-brass transition">Facebook</a>
+          <span class="dot"></span>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="hover:text-brass transition">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hairline mt-14 mb-7"></div>
+    <div class="flex flex-wrap items-center justify-between gap-4 text-[11px] uppercase tracking-[0.22em] text-champagne/45">
+      <span>© 2026 McCormick's Palm Springs. All rights reserved.</span>
+      <span><a href="index.html" class="hover:text-brass transition">← See both directions</a></span>
+      <span>Auction 81 <span class="dot mx-2"></span> November 20–22, 2026</span>
+    </div>
+  </div>
+
+  <!-- Banana Bytes credit -->
+  <div style="text-align:center; padding:1.5rem 1rem 0; font-size:0.7rem; letter-spacing:0.05em; opacity:0.45;">
+    <a href="https://instagram.com/BananaCares" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+      Mockup created by Banana Bytes
+    </a>
+  </div>
+</footer>
+
+<script>
+  // Subtle parallax on hero image (progressive enhancement — content visible regardless)
+  const heroImg = document.querySelector('#top img');
+  if (heroImg && window.matchMedia('(min-width: 768px)').matches) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y < window.innerHeight) heroImg.style.transform = `translateY(${y * 0.18}px) scale(1.02)`;
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>
