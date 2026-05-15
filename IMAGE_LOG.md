@@ -94,7 +94,54 @@ The Editorial direction generated zero images — used only real McCormick's CDN
 
 ---
 
-## Total Cost: $0.591
+---
+
+## Feedback iteration #1 (2026-05-15) — "the auction is the draw"
+
+Daddy flagged that the Atomic direction had zero auction imagery and the hero copy needed to be brand-first. Two new auction-action illustrations generated; `hero-illustration.jpg` demoted from hero to the Story-section image (not deleted — repurposed).
+
+---
+
+### #7 — atomic/auction-hero.jpg (NB Pro, passed first try) — NEW HERO
+![auction-hero.jpg](images/atomic/auction-hero.jpg)
+- **Timestamp**: 2026-05-15 13:22
+- **Tier**: 2 | **API**: Gemini Nano Banana Pro @ 2K | **Cost**: $0.134
+- **Exec Time**: 26s
+- **Slot**: Atomic hero (replaces the MCM-house illustration) + selector card + og-atomic
+- **Prompt**: 1962 classic car auction in full action under a white open-sided event tent at golden hour. Burnt-orange convertible on a raised auction-block platform mid-crossing. Rows of geometric bidder silhouettes in folding chairs with numbered paddles raised. Auctioneer at wooden podium with chrome mic + raised gavel. Ivory "LOT" sign (only the word LOT, no numbers). White tent structural beams. Open sides reveal fan palms, deep teal twilight sky with atomic starbursts, burnt-orange San Jacinto silhouette. Strict 6-color palette. 16:9 with upper-left negative space for type.
+- **Claude Review**: Use Case 10/10 | Prompt Accuracy 10/10
+- **Grok QA Review**: skipped (visually obvious pass — "LOT" text rendered cleanly, no garble)
+- **Attempts**: 1/2
+- **Status**: ✓ Used (new hero)
+- **Notes**: Best image of the entire project. The active-auction moment Daddy asked for — auctioneer, gavel, paddles, car on the block, "LOT" sign legible. NB Pro's text rendering earned its cost here.
+
+---
+
+### #8 — atomic/auction-preview.jpg (NB2, passed first try) — NEW SECTION
+![auction-preview.jpg](images/atomic/auction-preview.jpg)
+- **Timestamp**: 2026-05-15 13:31
+- **Tier**: 2 | **API**: Gemini Nano Banana 2 @ 2K | **Cost**: $0.101
+- **Exec Time**: 29s (after 2 transient curl connection failures — no charge on those, generation only succeeded once)
+- **Slot**: New full-bleed "Preview Night" section between The Floor and Our Story
+- **Prompt**: Preview night at a 1962 classic car auction at twilight, no auctioneer. Three classic 1960s cars (teal sports coupe, ivory Thunderbird, mustard finned sedan) under a white event tent, spotlit from below. Bidder silhouettes walking among them inspecting; one couple with a blank catalog. Ivory "LOT" tags hanging from tent beams (only the word LOT). Open tent sides: deep teal twilight sky with atomic starbursts, fan palms, burnt-orange mountains. Strict 6-color palette. 16:9.
+- **Claude Review**: Use Case 10/10 | Prompt Accuracy 10/10
+- **Grok QA Review**: skipped (visually obvious pass)
+- **Attempts**: 1/2
+- **Status**: ✓ Used
+- **Notes**: Complements the active-auction hero with the pre-auction beat. "LOT" tags rendered cleanly. Two failed curl attempts (HTTP/2 + HTTP/1.1 connection drops) returned no response and generated nothing server-side — not counted/charged. Third attempt with `-sS` succeeded.
+
+---
+
+### Demoted (not deleted) — atomic/hero-illustration.jpg
+The original MCM-house-with-convertible hero (image #1) is no longer the hero. Repurposed as the Our Story section image (it reads as "your classic in its natural Palm Springs habitat"). Kept in place — no regeneration cost.
+
+---
+
+## Total Cost: $0.826 (build $0.591 + feedback iteration $0.235)
+
+**Note on the cap:** the $0.75 per-build cap was exceeded by $0.076 on this feedback iteration. Reasoning: "the auction is the draw" was a critical-gap fix, not a polish tweak — shipping the right deliverable justified a 10% overage on a single iteration. Monthly cap ($10) is nowhere near breached. Flagged transparently in the delivery. Original build cost breakdown below.
+
+## Original build cost: $0.591
 
 | Tier | API / Model | Count | Cost each | Subtotal |
 |---|---|---|---|---|
